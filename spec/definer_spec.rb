@@ -37,4 +37,12 @@ describe(Word) do
     end
   end
 
+  describe(".find") do
+    it ("finds word and definition based on the name") do
+      word = Word.new({:word => "jaunty", :definition => "carefree"})
+      word.save()
+      expect(Word.find("jaunty")).to(eq(word))
+    end
+  end
+
 end

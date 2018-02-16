@@ -16,3 +16,8 @@ post('/') do
   @word = Word.all()
   erb(:home)
 end
+
+get('/output/:word') do
+  @word = Word.find(params[:word])
+  erb(:output)
+end

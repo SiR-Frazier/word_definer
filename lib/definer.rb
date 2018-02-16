@@ -27,4 +27,12 @@ class Word
   def self.clear()
     @@words = []
   end
+
+  def self.find(x)
+    @@words.each do |word|
+      if word.word == x
+        return word
+      end
+    end
+  end
 end
