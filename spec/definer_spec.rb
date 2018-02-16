@@ -18,4 +18,14 @@ describe(Word) do
     end
   end
 
+  describe("#save") do
+    it ("saves added word and definition") do
+      word = Word.new({:word => "harbor", :definition => "a place to give protection"})
+      word2 = Word.new({:word => "benevolent", :definition => "friendly; generous"})
+      word.save()
+      word2.save()
+      expect(Word.all()).to(eq([word, word2]))
+    end
+  end
+
 end

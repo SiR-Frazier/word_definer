@@ -14,5 +14,14 @@ class Word
 
   def add_definition
     @definition
-  end  
+  end
+
+  def self.all()
+    @@words
+  end
+
+  def save
+    @@words.push(self)
+  end
+
 end
