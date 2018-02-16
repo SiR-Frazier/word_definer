@@ -8,4 +8,8 @@ class Word
     @definition = attributes.fetch(:definition)
   end
 
+  def add_word
+    @word
+  end
+
 end
