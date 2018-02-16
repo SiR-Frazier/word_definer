@@ -19,7 +19,7 @@ describe(Word) do
   end
 
   describe("#save") do
-    it ("saves added word and definition") do
+    it ("saves input word and definition") do
       word = Word.new({:word => "harbor", :definition => "a place to give protection"})
       word2 = Word.new({:word => "benevolent", :definition => "friendly; generous"})
       word.save()
