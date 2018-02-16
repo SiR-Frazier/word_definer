@@ -1,13 +1,18 @@
 require('sinatra')
 require('sinatra/reloader')
 also_reload('lib/**/*.rb')
-require('./lib/word_definer')
+require('./lib/definer')
 
 get('/') do
-  @description = "___"
-  erb(:input)
+  @word = Word.all()
+  erb(:home)
 end
 
-get('/output') do
-  erb(:output)
+post('/') do
+  word = params["word"]
+  definition = params["definition"]
+  word = Word.new(params)
+  word.save()
+  @word = Word.all()
+  erb(:home)
 end
