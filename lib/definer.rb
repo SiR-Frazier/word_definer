@@ -12,4 +12,7 @@ class Word
     @word
   end
 
+  def add_definition
+    @definition
+  end  
 end
