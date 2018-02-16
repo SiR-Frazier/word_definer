@@ -3,7 +3,7 @@
 </div>
   <h2>Click to view a definition!<h2>
     <ul>
-      <li>cajole</li>
+      <li href="">cajole</li>
       <li>digress</li>
       <li>emulate</li>
       <li>hiatus</li>
@@ -19,4 +19,13 @@
        <input name="definition" class="form-control" type="text" placeholder= "definition"><br>
        <button type="submit" class="btn btn-primary">Save</button>
      </div>
+
+    <div id = "output">
+      <h2>Here are your words</h2>
+
+      <% @word.each do |word| %>
+      <h4><a href="/output/<%=word.word %>"><%= word.word %></a></h4>
+      <% end %>
+      
+    </div>
   </form>
