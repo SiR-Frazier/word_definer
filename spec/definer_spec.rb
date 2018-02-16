@@ -28,4 +28,13 @@ describe(Word) do
     end
   end
 
+  describe(".clear") do
+    it ("clears words from the list") do
+      word = Word.new({:word => "harbor", :definition => "a place to give protection"})
+      word.save()
+      Word.clear()
+      expect(Word.all()).to(eq([]))
+    end
+  end
+
 end

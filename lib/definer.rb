@@ -24,4 +24,7 @@ class Word
     @@words.push(self)
   end
 
+  def self.clear()
+    @@words = []
+  end
 end
