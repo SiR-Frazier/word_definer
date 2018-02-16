@@ -1,4 +1,11 @@
-<h2><%= @word.word %></h2>
-<h2><%= @word.definition %></h2>
-
+<h2>Term: <%= @word.word %></h2>
+<h2>Definition: <%= @word.definition %></h2>
+<br>
+<h2>Add another definition to the list!<h2>
+<form action="/" method="post">
+  <div class="form-group">
+   <h2>Add definition</h2>
+    <input name="definition" class="form-control" type="text" placeholder= "definition">
+    <br>
+    <button type="submit" name="save" class="btn btn-primary">save</button>
 <h3><a href="/">return to home page</a><h3>
