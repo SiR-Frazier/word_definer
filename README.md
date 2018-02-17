@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application allows users to view the already existing terms and definitions on the page, as well as create their own list of terms._
+_This application allows users create an ongoing list of words and definitions on the page, as well as add additional definitions to said words._
 
 ## Setup/Installation Requirements
 
@@ -15,7 +15,7 @@ _This application allows users to view the already existing terms and definition
 
 ## Known Bugs
 
-_Currently, the application is experiencing issues loading the page with the definitions for the hardcoded definitions._
+_Currently, the application is experiencing issues with the additional definition form_
 
 ## Support and contact details
 
