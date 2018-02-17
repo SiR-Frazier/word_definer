@@ -1,8 +1,7 @@
 .container {
   font-family: 'Nanum Pen Script', cursive;
-  color: blue;
 }
 
-body {
-color: blue;
+.jumbotron {
+  text-align: center;
 }
