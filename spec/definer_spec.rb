@@ -44,5 +44,16 @@ describe(Word) do
       expect(Word.find("jaunty")).to(eq(word))
     end
   end
-
 end
+
+# describe(Definition) do
+#
+#   describe("#add_new_definition") do
+#     it("shows additional definition along with the original defintiion") do
+#     word = Word.new({:word => "taciturn", :definition => "taciturn", :definition => "not in the mood to talk"})
+#     word.save()
+#     expect(Word.add_new_definition()).to(eq("not in the mood to talk"))
+#     end
+#   end
+#
+# end
