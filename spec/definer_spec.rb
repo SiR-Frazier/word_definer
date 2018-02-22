@@ -4,6 +4,10 @@ require('rspec')
 
 describe(Word) do
 
+  before do
+    Word.clear()
+  end
+
   describe("#add_word") do
     it ("shows word once user adds the word to the input field") do
       word = Word.new({:word => "remember", :definition => "to think of (something or someone from the past) again"})
@@ -21,10 +25,10 @@ describe(Word) do
   describe("#save") do
     it ("saves input word and definition") do
       word = Word.new({:word => "harbor", :definition => "a place to give protection"})
-      word2 = Word.new({:word => "benevolent", :definition => "friendly; generous"})
+      # word2 = Word.new({:word => "benevolent", :definition => "friendly; generous"})
       word.save()
-      word2.save()
-      expect(Word.all()).to(eq([word, word2]))
+      # word2.save()
+      expect(Word.all()).to(eq([word]))
     end
   end
 
