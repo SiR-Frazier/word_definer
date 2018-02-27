@@ -8,7 +8,9 @@
 
 _This application allows users create an ongoing list of words and definitions on the page, as well as add additional definitions to said words._
 
-## Heroku link to Word Definer app: https://stormy-fjord-12945.herokuapp.com/
+## Heroku link to Word Definer app:
+
+*https://stormy-fjord-12945.herokuapp.com/*
 
 ## Setup/Installation Requirements
 
