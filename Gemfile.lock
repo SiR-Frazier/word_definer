@@ -53,14 +53,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
   capybara
   pry
   rspec
   sinatra
-
-RUBY VERSION
-   ruby 2.4.1p111
 
 BUNDLED WITH
    1.16.1
