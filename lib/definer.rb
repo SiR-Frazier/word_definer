@@ -36,4 +36,3 @@ class Word
     end
   end
 end
-ß

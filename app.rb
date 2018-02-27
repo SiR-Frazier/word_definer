@@ -22,4 +22,3 @@ get('/output/:word') do
   @word = Word.find(params[:word])
   erb(:output)
 end
-ß
