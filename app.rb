@@ -22,10 +22,4 @@ get('/output/:word') do
   @word = Word.find(params[:word])
   erb(:output)
 end
-
-# post('/output/:definition') do
-#   definition = params["definition"]
-#   word.save()
-#   @word = Word.all()
-#   erb(:output)
-# end
+ß
